@@ -1,11 +1,12 @@
-
 #!/bin/bash
+
+CARPETA_ACTUAL=$(pwd)
 
 echo Desactivando todos los repositorios actuales
 
 sudo sed -i -e 's/^[[:space:]]*//; s/^deb/#deb/g' /etc/apt/sources.list
 
-cd /etc/apt/sources.list.d/; for REPO in $(ls); do sudo sed -i -e 's/^[[:space:]]*//; s/^deb/#deb/g' $REPO; done; cd;
+cd /etc/apt/sources.list.d/; for REPO in $(ls); do sudo sed -i -e 's/^[[:space:]]*//; s/^deb/#deb/g' $REPO; done; cd $CARPETA_ACTUAL;
 
 
 
