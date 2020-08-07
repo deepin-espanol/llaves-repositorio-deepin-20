@@ -50,6 +50,6 @@ sudo sed -i "s|^deb \[by-hash=force\] https://community-packages.deepin.com/deep
 sudo sed -i "s|^deb https://community-store-packages.deepin.com/appstore eagle appstore|#deb https://community-store-packages.deepin.com/appstore eagle appstore\ndeb https://mirror.deepines.com/testing/appstore eagle appstore\n|" /etc/apt/sources.list.d/appstore.list
 
 
-echo Iniciando actualización
+echo Ejecute el siguiente comando para iniciar la actualización
 
-sudo apt update && sudo apt full-upgrade
+echo "sudo apt update && sudo apt full-upgrade"
