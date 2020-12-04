@@ -16,6 +16,7 @@ echo -e "\n#Repositorio de Deepin 20 (procedimiento Deepin en Español)\ndeb [by
 
 echo -e "#Repositorio de tienda de aplicaciones para Deepin 20 (procedimiento Deepin en Español)\ndeb https://community-store-packages.deepin.com/appstore eagle appstore" | sudo tee /etc/apt/sources.list.d/appstore.list
 
+echo -e "#Repositorio de impresoras para Deepin 20 (procedimiento Deepin en Español)\ndeb http://packages.chinauos.com/printer eagle non-free" | sudo tee /etc/apt/sources.list.d/printer.list
 
 echo Respaldando las llaves de los repositorios de Deepin 15
 
