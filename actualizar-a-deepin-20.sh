@@ -46,7 +46,7 @@ rm trusted.gpg deepin-pools-keyring.gpg uos-archive-keyring.gpg
 
 echo Cambiando a repositorio espejo de Deepin en Español
 
-sudo sed -i "s|^deb \[by-hash=force\] https://community-packages.deepin.com/deepin/ apricot main contrib non-free|#deb \[by-hash=force\] https://community-packages.deepin.com/deepin/ apricot main contrib non-free\ndeb \[by-hash=force\] https://mirror.deepines.com/testing/deepin-20-beta/ apricot main contrib non-free|" /etc/apt/sources.list
+sudo sed -i "s|^deb \[by-hash=force\] https://community-packages.deepin.com/deepin/ apricot main contrib non-free|#deb \[by-hash=force\] https://community-packages.deepin.com/deepin/ apricot main contrib non-free\ndeb \[by-hash=force\] https://mirror.deepines.com/deepin/ apricot main contrib non-free|" /etc/apt/sources.list
 
 sudo sed -i "s|^deb https://community-store-packages.deepin.com/appstore eagle appstore|#deb https://community-store-packages.deepin.com/appstore eagle appstore\ndeb https://mirror.deepines.com/testing/appstore eagle appstore\n|" /etc/apt/sources.list.d/appstore.list
 
